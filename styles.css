@@ -224,3 +224,55 @@ text-align: center;
     max-width: 90%;
   }
 }
+/* ========== Diseño de atributos dl formulario ========== */
+
+.card.forms {
+  animation: fadeIn 0.5s ease;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: var(--muted);
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+input[type="submit"] {
+  display: block;
+  width: 100%;
+  background: var(--primary);
+  color: #fff;
+  font-size: 1rem;
+  padding: 12px;
+  border: none;
+  border-radius: 14px;
+  box-shadow: var(--shadow);
+  cursor: pointer;
+  transition: background .3s ease, transform .1s ease;
+}
+input[type="submit"]:hover {
+  background: #cc001f;
+  transform: scale(1.02);
+}
+input, textarea, select {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: #161d26;
+  color: var(--text);
+  font-size: 1rem;
+  outline: none;
+  transition: border-color .2s ease, box-shadow .2s ease;
+}
+input:focus, textarea:focus, select:focus {
+  border-color: var(--secondary);
+  box-shadow: 0 0 0 3px rgba(0,82,204,.4);
+}
